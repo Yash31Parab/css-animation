@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day7</title>
+
+    <style>
+         .circle{
+        background-color: limegreen;
+        border: 1px solid;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        animation: bounce 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        position: relative;
+     }
+    @keyframes bounce{
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 200px, 0); }
+    }
+    .box {
+  width: 300px;
+  height: 250px;
+  background-color: lightsteelblue;
+  animation-name: animation1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  position: relative;
+}
+@keyframes animation1 {
+  0% {
+    background-color: rgb(158, 105, 255);
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    background-color: rgb(167, 220, 20);
+    top: 0px;
+    left: 700px;
+  }
+  50% {
+    background-color: rgb(43, 159, 226);
+    top: 200px;
+    left: 700px;
+  }
+  75% {
+    background-color: rgb(255, 0, 191);
+    top: 200px;
+    left: 0px;
+  }
+  100% {
+    background-color: rgb(225, 164, 65);
+    top: 0px;
+    left: 0px;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <div class="circle"></div>
+    <div class="box"></div>
+   
+</body>
+</html>
